@@ -264,7 +264,7 @@ func LookupASNsByName(s string) ([]*core.ASNRequest, error) {
 	var records []*core.ASNRequest
 
 	s = strings.ToLower(s)
-	url := "https://raw.githubusercontent.com/OWASP/Amass/master/wordlists/asnlist.txt"
+	url := "https://raw.githubusercontent.com/hazcod/amass/master/wordlists/asnlist.txt"
 	page, err := utils.RequestWebPage(url, nil, nil, "", "")
 	if err != nil {
 		return records, err

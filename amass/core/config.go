@@ -29,8 +29,8 @@ const (
 	// DefaultOutputDirectory is the name of the directory used for output files, such as the graph database.
 	DefaultOutputDirectory = "amass"
 	
-	defaultWordlistURL     = "https://raw.githubusercontent.com/OWASP/Amass/master/wordlists/namelist.txt"
-	defaultAltWordlistURL  = "https://raw.githubusercontent.com/OWASP/Amass/master/wordlists/alterations.txt"
+	defaultWordlistURL     = "https://raw.githubusercontent.com/hazcod/amass/master/wordlists/namelist.txt"
+	defaultAltWordlistURL  = "https://raw.githubusercontent.com/hazcod/amass/master/wordlists/alterations.txt"
 )
 
 // Config passes along Amass configuration settings and options.
