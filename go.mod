@@ -1,4 +1,4 @@
-module github.com/OWASP/Amass
+module github.com/hazcod/amass
 
 go 1.12
 
