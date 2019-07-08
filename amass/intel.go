@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OWASP/Amass/amass/core"
-	"github.com/OWASP/Amass/amass/sources"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/core"
+	"github.com/hazcod/amass/amass/sources"
+	"github.com/hazcod/amass/amass/utils"
 )
 
 // IntelCollection is the object type used to execute a open source information gathering with Amass.

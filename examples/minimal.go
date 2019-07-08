@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/OWASP/Amass/amass"
+	"github.com/hazcod/amass/amass"
 )
 
 func main() {

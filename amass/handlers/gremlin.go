@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OWASP/Amass/amass/core"
-	"github.com/OWASP/Amass/amass/utils"
-	"github.com/OWASP/Amass/amass/utils/viz"
+	"github.com/hazcod/amass/amass/core"
+	"github.com/hazcod/amass/amass/utils"
+	"github.com/hazcod/amass/amass/utils/viz"
 	"github.com/qasaur/gremgo"
 )
 

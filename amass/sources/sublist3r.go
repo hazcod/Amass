@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/OWASP/Amass/amass/core"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/core"
+	"github.com/hazcod/amass/amass/utils"
 )
 
 // Sublist3rAPI is the Service that handles access to the Sublist3r API data source.

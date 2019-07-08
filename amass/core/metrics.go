@@ -6,7 +6,7 @@ package core
 import (
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/utils"
 )
 
 // MetricsCollector provides Amass services with the ability to track performance.

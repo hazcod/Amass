@@ -6,8 +6,8 @@ package sources
 import (
 	"fmt"
 
-	"github.com/OWASP/Amass/amass/core"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/core"
+	"github.com/hazcod/amass/amass/utils"
 )
 
 // FindSubdomains is the Service that handles access to the FindSubdomains data source.

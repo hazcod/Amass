@@ -3,7 +3,7 @@ package sources
 import (
 	"testing"
 
-	"github.com/OWASP/Amass/amass/core"
+	"github.com/hazcod/amass/amass/core"
 )
 
 func TestLoCArchive(t *testing.T) {

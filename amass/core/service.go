@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/utils"
 )
 
 const (

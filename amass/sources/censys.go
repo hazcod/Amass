@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/amass/core"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/core"
+	"github.com/hazcod/amass/amass/utils"
 )
 
 // Censys is the Service that handles access to the Censys data source.

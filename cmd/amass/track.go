@@ -11,9 +11,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/OWASP/Amass/amass/core"
-	"github.com/OWASP/Amass/amass/handlers"
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/core"
+	"github.com/hazcod/amass/amass/handlers"
+	"github.com/hazcod/amass/amass/utils"
 	"github.com/fatih/color"
 )
 

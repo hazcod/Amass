@@ -20,7 +20,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/OWASP/Amass/amass/utils"
+	"github.com/hazcod/amass/amass/utils"
 	"github.com/go-ini/ini"
 	"github.com/google/uuid"
 )
