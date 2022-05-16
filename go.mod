@@ -26,7 +26,7 @@ require (
 	github.com/johnnadratowski/golang-neo4j-bolt-driver v0.0.0-20181101021923-6b24c0085aae
 	github.com/lib/pq v1.1.1
 	github.com/mattn/go-colorable v0.1.2 // indirect
-	github.com/miekg/dns v1.1.15
+	github.com/miekg/dns v1.1.25
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/qasaur/gremgo v0.0.0-20180719101618-fa23ada7c5da
 	github.com/remyoudompheng/bigfft v0.0.0-20190512091148-babf20351dd7 // indirect
