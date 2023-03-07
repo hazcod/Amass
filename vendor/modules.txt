@@ -12,41 +12,27 @@ github.com/boltdb/bolt
 github.com/caffix/cloudflare-roundtripper/cfrt
 # github.com/cayleygraph/cayley v0.7.5
 github.com/cayleygraph/cayley
+github.com/cayleygraph/cayley/clog
 github.com/cayleygraph/cayley/graph
+github.com/cayleygraph/cayley/graph/iterator
+github.com/cayleygraph/cayley/graph/kv
 github.com/cayleygraph/cayley/graph/kv/bolt
-github.com/cayleygraph/cayley/quad
+github.com/cayleygraph/cayley/graph/log
 github.com/cayleygraph/cayley/graph/memstore
 github.com/cayleygraph/cayley/graph/path
-github.com/cayleygraph/cayley/writer
-github.com/cayleygraph/cayley/clog
-github.com/cayleygraph/cayley/graph/kv
-github.com/cayleygraph/cayley/voc
-github.com/cayleygraph/cayley/voc/schema
-github.com/cayleygraph/cayley/graph/iterator
-github.com/cayleygraph/cayley/graph/shape
-github.com/cayleygraph/cayley/graph/log
 github.com/cayleygraph/cayley/graph/proto
+github.com/cayleygraph/cayley/graph/shape
 github.com/cayleygraph/cayley/internal/lru
+github.com/cayleygraph/cayley/quad
 github.com/cayleygraph/cayley/quad/pquads
 github.com/cayleygraph/cayley/quad/pquads/pio
+github.com/cayleygraph/cayley/voc
+github.com/cayleygraph/cayley/voc/schema
+github.com/cayleygraph/cayley/writer
 # github.com/cenkalti/backoff v2.1.1+incompatible
 github.com/cenkalti/backoff
 # github.com/chromedp/cdproto v0.0.0-20190609032908-dd39f0bf0a54
-github.com/chromedp/cdproto/dom
-github.com/chromedp/cdproto/network
-github.com/chromedp/cdproto/cdp
-github.com/chromedp/cdproto/runtime
-github.com/chromedp/cdproto/debugger
-github.com/chromedp/cdproto/io
-github.com/chromedp/cdproto/security
 github.com/chromedp/cdproto
-github.com/chromedp/cdproto/css
-github.com/chromedp/cdproto/emulation
-github.com/chromedp/cdproto/input
-github.com/chromedp/cdproto/inspector
-github.com/chromedp/cdproto/log
-github.com/chromedp/cdproto/page
-github.com/chromedp/cdproto/target
 github.com/chromedp/cdproto/accessibility
 github.com/chromedp/cdproto/animation
 github.com/chromedp/cdproto/applicationcache
@@ -55,23 +41,37 @@ github.com/chromedp/cdproto/backgroundservice
 github.com/chromedp/cdproto/browser
 github.com/chromedp/cdproto/cachestorage
 github.com/chromedp/cdproto/cast
+github.com/chromedp/cdproto/cdp
+github.com/chromedp/cdproto/css
 github.com/chromedp/cdproto/database
+github.com/chromedp/cdproto/debugger
 github.com/chromedp/cdproto/deviceorientation
+github.com/chromedp/cdproto/dom
 github.com/chromedp/cdproto/domdebugger
 github.com/chromedp/cdproto/domsnapshot
 github.com/chromedp/cdproto/domstorage
+github.com/chromedp/cdproto/emulation
 github.com/chromedp/cdproto/fetch
 github.com/chromedp/cdproto/headlessexperimental
 github.com/chromedp/cdproto/heapprofiler
 github.com/chromedp/cdproto/indexeddb
+github.com/chromedp/cdproto/input
+github.com/chromedp/cdproto/inspector
+github.com/chromedp/cdproto/io
 github.com/chromedp/cdproto/layertree
+github.com/chromedp/cdproto/log
 github.com/chromedp/cdproto/memory
+github.com/chromedp/cdproto/network
 github.com/chromedp/cdproto/overlay
+github.com/chromedp/cdproto/page
 github.com/chromedp/cdproto/performance
 github.com/chromedp/cdproto/profiler
+github.com/chromedp/cdproto/runtime
+github.com/chromedp/cdproto/security
 github.com/chromedp/cdproto/serviceworker
 github.com/chromedp/cdproto/storage
 github.com/chromedp/cdproto/systeminfo
+github.com/chromedp/cdproto/target
 github.com/chromedp/cdproto/tethering
 github.com/chromedp/cdproto/tracing
 github.com/chromedp/cdproto/webaudio
@@ -101,16 +101,16 @@ github.com/go-ini/ini
 github.com/go-kit/kit/metrics
 github.com/go-kit/kit/metrics/discard
 github.com/go-kit/kit/metrics/expvar
-github.com/go-kit/kit/metrics/prometheus
 github.com/go-kit/kit/metrics/generic
 github.com/go-kit/kit/metrics/internal/lv
+github.com/go-kit/kit/metrics/prometheus
 # github.com/gobwas/httphead v0.0.0-20180130184737-2c6c146eadee
 github.com/gobwas/httphead
 # github.com/gobwas/pool v0.2.0
-github.com/gobwas/pool/pbufio
 github.com/gobwas/pool
-github.com/gobwas/pool/pbytes
 github.com/gobwas/pool/internal/pmath
+github.com/gobwas/pool/pbufio
+github.com/gobwas/pool/pbytes
 # github.com/gobwas/ws v1.0.1
 github.com/gobwas/ws
 github.com/gobwas/ws/wsutil
@@ -124,7 +124,7 @@ github.com/golang/protobuf/proto
 github.com/google/go-querystring/query
 # github.com/google/uuid v1.1.1
 github.com/google/uuid
-# github.com/gorilla/websocket v1.4.0
+# github.com/gorilla/websocket v1.4.1
 github.com/gorilla/websocket
 # github.com/irfansharif/cfilter v0.1.1
 github.com/irfansharif/cfilter
@@ -136,9 +136,9 @@ github.com/johnnadratowski/golang-neo4j-bolt-driver
 github.com/johnnadratowski/golang-neo4j-bolt-driver/encoding
 github.com/johnnadratowski/golang-neo4j-bolt-driver/errors
 github.com/johnnadratowski/golang-neo4j-bolt-driver/log
+github.com/johnnadratowski/golang-neo4j-bolt-driver/structures
 github.com/johnnadratowski/golang-neo4j-bolt-driver/structures/graph
 github.com/johnnadratowski/golang-neo4j-bolt-driver/structures/messages
-github.com/johnnadratowski/golang-neo4j-bolt-driver/structures
 # github.com/knq/sysutil v0.0.0-20181215143952-f05b59f0f307
 github.com/knq/sysutil
 # github.com/lib/pq v1.1.1
@@ -147,9 +147,9 @@ github.com/lib/pq/oid
 github.com/lib/pq/scram
 # github.com/mailru/easyjson v0.0.0-20190403194419-1ea4449da983
 github.com/mailru/easyjson
+github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
-github.com/mailru/easyjson/buffer
 # github.com/mattn/go-colorable v0.1.2
 github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.8
@@ -164,14 +164,14 @@ github.com/mitchellh/go-homedir
 github.com/pkg/errors
 # github.com/prometheus/client_golang v1.0.0
 github.com/prometheus/client_golang/prometheus
-github.com/prometheus/client_golang/prometheus/promhttp
 github.com/prometheus/client_golang/prometheus/internal
+github.com/prometheus/client_golang/prometheus/promhttp
 # github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
 github.com/prometheus/client_model/go
 # github.com/prometheus/common v0.4.1
 github.com/prometheus/common/expfmt
-github.com/prometheus/common/model
 github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+github.com/prometheus/common/model
 # github.com/prometheus/procfs v0.0.2
 github.com/prometheus/procfs
 github.com/prometheus/procfs/internal/fs
@@ -193,16 +193,16 @@ github.com/tylertreat/BoomFilters
 golang.org/x/crypto/ed25519
 golang.org/x/crypto/ed25519/internal/edwards25519
 # golang.org/x/net v0.0.0-20190522155817-f3200d17e092
-golang.org/x/net/ipv4
-golang.org/x/net/ipv6
-golang.org/x/net/html
-golang.org/x/net/html/charset
 golang.org/x/net/bpf
+golang.org/x/net/context
+golang.org/x/net/context/ctxhttp
+golang.org/x/net/html
+golang.org/x/net/html/atom
+golang.org/x/net/html/charset
 golang.org/x/net/internal/iana
 golang.org/x/net/internal/socket
-golang.org/x/net/html/atom
-golang.org/x/net/context/ctxhttp
-golang.org/x/net/context
+golang.org/x/net/ipv4
+golang.org/x/net/ipv6
 # golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 golang.org/x/oauth2
 golang.org/x/oauth2/internal
@@ -210,31 +210,31 @@ golang.org/x/oauth2/internal
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 # golang.org/x/text v0.3.2
-golang.org/x/text/transform
 golang.org/x/text/encoding
 golang.org/x/text/encoding/charmap
 golang.org/x/text/encoding/htmlindex
-golang.org/x/text/encoding/internal/identifier
 golang.org/x/text/encoding/internal
+golang.org/x/text/encoding/internal/identifier
 golang.org/x/text/encoding/japanese
 golang.org/x/text/encoding/korean
 golang.org/x/text/encoding/simplifiedchinese
 golang.org/x/text/encoding/traditionalchinese
 golang.org/x/text/encoding/unicode
-golang.org/x/text/language
-golang.org/x/text/internal/utf8internal
-golang.org/x/text/runes
 golang.org/x/text/internal/language
 golang.org/x/text/internal/language/compact
 golang.org/x/text/internal/tag
+golang.org/x/text/internal/utf8internal
+golang.org/x/text/language
+golang.org/x/text/runes
+golang.org/x/text/transform
 # google.golang.org/appengine v1.4.0
-google.golang.org/appengine/urlfetch
 google.golang.org/appengine/internal
-google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/internal/base
 google.golang.org/appengine/internal/datastore
 google.golang.org/appengine/internal/log
 google.golang.org/appengine/internal/remote_api
+google.golang.org/appengine/internal/urlfetch
+google.golang.org/appengine/urlfetch
 # gopkg.in/sourcemap.v1 v1.0.5
 gopkg.in/sourcemap.v1
 gopkg.in/sourcemap.v1/base64vlq
